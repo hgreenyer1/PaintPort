@@ -1,0 +1,210 @@
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
+  * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  
+  body {
+      background: var(--bg);
+  }
+
+/* Style buttons */
+
+.bar{
+  background-color: rgb(218, 224, 247);
+  overflow: hidden;
+  height:50px;
+}
+
+.bar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  outline-color: blue;
+}
+
+.bar a:hover {
+  background-color: rgb(226, 233, 248);
+  color: black;
+}
+
+.column{
+  outline-color: blue;
+}
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn2 {
+  background-color: rgb(1, 56, 206); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn3 {
+  background-color: rgb(2, 5, 150); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.notes button{
+  background-color: white;
+  border: none; /* Remove borders */
+  padding: 12px 16px; /* Some padding */
+  font-size: 20px; /* Set a font size */
+  text-emphasis: bold;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.btn2:hover {
+  background-color: RoyalBlue;
+}
+
+.btn3:hover {
+  background-color: RoyalBlue;
+}
+
+
+/* homepage image layout 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*end image expand tutorial*/
+
+/*styling the input text boxes */
+.notes {
+  position: relative;
+  left: 700px; 
+  bottom: 630px;
+  padding: 20px 20px;
+  margin-top: 20px 10px;
+}
+
+.full{
+  padding-top: 12px;
+}
+
+/*dropdown menue styling
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: fixed;
+  bottom: 1042px;
+  left: 160px;
+  padding: 20px;
+  display:inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.icon {
+  max-width: 60px; 
+  max-height: 60px;
+  padding:0%;
+}
+
+.gvid {
+  position: fixed;
+  left: 1000px;
+  bottom:500px;
+}
+
+/*testing collapsable */
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/*input text boxes */
+textarea {
+  height: 150px;
+  width: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+

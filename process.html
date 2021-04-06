@@ -1,0 +1,131 @@
+<!-- process documentation page linked from home-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process Documentation</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    <!-- button to return to home screen-->
+    <a href=index.html>
+        <button class = "btn"><i class= "fa fa-home"></i></button>
+    </a>
+
+    <!-- moodboard button-->
+    <button class = 'btn2' id='mood' onclick = mb()>References</button>
+
+    <!-- main art piece with color theme-->
+    <div class='full'>
+        <img src='cst_art.jpg' id='art' style="width:700px;height:500px;">
+    </div>
+    <div class = 'theme'>
+        <img src='color_theme.jpeg' id='theme' style="width:700px;height:100px;">
+    </div>
+    
+    <!-- text input boxes -->
+    <form class='notes'>
+        <button type='button' class='collapsible'>Inspiration <i class= 'fa fa-caret-down'></i></button>
+        <div class = 'content'>
+            <textarea></textarea>
+        </div> <br>
+        <button type='button' class='collapsible'>Strengths <i class= 'fa fa-caret-down'></i></button>
+        <div class = 'content'>
+            <textarea></textarea>
+        </div> <br>
+        <button type='button' class='collapsible'>Weaknesses <i class= 'fa fa-caret-down'></i></button>
+        <div class = 'content'>
+            <textarea></textarea>
+        </div> <br>
+        <button type='button' class='collapsible'>Notes <i class= 'fa fa-caret-down'></i></button>
+        <div class = 'content'>
+            <textarea></textarea>
+        </div> 
+    </form>
+
+    <!--view filter dropdown menue-->
+    <div class='dropdown' id = 'b-views'>
+        <button class = 'btn2'>Views
+            <i class= 'fa fa-caret-down'></i>
+        </button>
+        <div class = 'dropdown-content' id='drop-views'>
+            <a onclick=og()>Original</a>
+            <a onclick=bw()>Greyscale</a>
+            <a onclick=vf() id = 'vert'>Vertical Flip</a>
+            <a onclick=hf()>Horizontal Flip</a>
+            <a onclick=thirds()>Rule of Thirds</a>
+            <a onclick=gold()>Diagonals</a> 
+        </div>
+    </div>
+
+    <!-- tool videos menu -->
+    <div class='dropdown' style='left:255px'>
+        <button class = 'btn2'>Tools
+            <i class= 'fa fa-caret-down'></i>
+        </button>
+        <div class = 'dropdown-content' id='drop-tools'>
+            <a onclick=b1()>
+                <img src='b1.JPG' onclick=g1() class='icon'>
+            </a>
+            <a onclick=b2()>
+                <img src='b2.JPG' onclick=g2() class='icon'>
+            </a>
+            <a onclick=b3()>
+                <img src='b3.JPG' onclick=g3() class='icon'>
+            </a>
+            <a onclick=b4()>
+                <img src='b4.JPG' onclick=g4() class='icon'>
+            </a>
+            <a onclick=b5()>
+                <img src='b5.JPG' onclick=g5() class='icon'>
+            </a>
+            <a onclick=b6()>
+                <img src='b6.JPG' onclick=g6() class='icon'>
+            </a>
+            <a onclick=b7()>
+                <img src='b7.JPG' onclick=g7() class='icon'>
+            </a>
+            <a onclick=b8()>
+                <img src='b8.JPG' onclick=g8() class='icon'>
+            </a>
+        </div>
+    </div>
+
+    <!-- menues for adding and removing views-->
+    <div class='dropdown' style = 'left:410px'>
+        <button class = 'btn3'>Add Views
+            <i class= 'fa fa-caret-down'></i>
+        </button>
+        <div class = 'dropdown-content'>
+            <a onclick=iv() id='first'>Invert</a>
+            <a>Triangles</a>
+            <a>Golden Rule</a>
+            <a>Golden Ratio</a>
+        </div>
+    </div>
+
+    <div class='dropdown' style='left:540px'>
+        <button class = 'btn3'>Remove Views
+            <i class= 'fa fa-caret-down'></i>
+        </button>
+        <div class = 'dropdown-content'>
+            <a >Black and White</a>
+            <a onclick=rv()>Vertical Flip</a>
+            <a>Horizontal Flip</a>
+            <a>Rule of Thirds</a>
+            <a>Diagonals</a> 
+        </div>
+    </div>
+
+    <!--position holder for the videos-->
+    <div class='gvid'>
+        <img src='bgnd.JPG' id='gifs' style="width:700px;height:500px;">
+    </div>
+
+
+    <script src='app.js'></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    
+</body>
+</html>
